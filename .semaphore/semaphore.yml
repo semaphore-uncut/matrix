@@ -21,6 +21,6 @@ blocks:
                 - "http://ftp.belnet.be/ubuntu.com/ubuntu/releases/18.04/ubuntu-18.04.1-desktop-amd64.iso"
                 - "http://ubuntu-releases.mirrors.proxad.net/18.04/ubuntu-18.04.1-desktop-amd64.iso"
           commands:
-            - echo "Rate: $RATE"
-            - echo "URL: $URL"
+            - "echo 'Rate: $RATE'"
+            - "echo 'URL: $URL'"
             - curl --limit-rate $RATE $URL > /dev/null
